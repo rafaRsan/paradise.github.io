@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="activate">REGISTRO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <div class="principal">
+        <div class="principal_registro">
+            <form action="">
+
+                <label for="FName">NOMBRE</label>
+                <input type="text" id="FName" name="firstName" placeholder="Tu nombre...">
+
+                <label for="LName">APELLIDO</label>
+                <input type="text" id="LName" name="lastName" placeholder="Tu apellido...">
+
+                <label for="country">PAIS</label>
+                <select name="country" id="country">
+                    <option value="argentina">ARGENTINA</option>
+                    <option value="chile">CHILE</option>
+                    <option value="brasil">BRASIL</option>
+                    <option value="uruguay">URUGUAY</option>
+                </select>
+
+                <label for="mail">CORREO ELECTRONICO</label>
+                <input type="text" id="mail" name="email" placeholder="Tu correo electronico">
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footerSection">
+            <p class="footerLinks">
+                <a href="index.html">HOME</a>
+                <a class="activeLink">REGISTRO</a>
+                <a href="contacto.html">CONTACTO</a>
+            </p>
+            <p>R&R company</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

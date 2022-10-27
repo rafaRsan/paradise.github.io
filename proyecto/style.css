@@ -1,0 +1,236 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+ul {
+    overflow: hidden;
+    list-style: none;
+    
+}
+
+nav {
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flexbox;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+ul li{
+    float: left;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: rgba(238, 255, 0, 0.849);
+    text-align: center;
+    padding: 08px 50px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.activate {
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+body {
+    background-color: rgba(113, 255, 255, 0.89);
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.sizex4{
+    font-size: 300%;
+}
+.principalText{
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.principal {
+    padding-top: 20px;
+    margin-top: 10vh; 
+}
+
+@media only screen and (min-with:768px){
+    .principal{
+        padding-top: 20px;
+        margin-top: 5vh;
+    }
+}
+
+.principal_registro {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.principal_registro_enviar {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.principal_registro>form{
+    width: 30rem;
+}
+
+.fullWidthImage{
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
+    min-height: 280px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    padding: 0.5vw;
+    font-size: 120%;
+}
+
+.contacto_contacto-b{
+    border: 1px solid black;
+    background-color: rgba(113, 255, 255, 0.89);
+    color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto_contacto{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto>div>div>img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contacto_contacto-act{
+    border: 4px solid red;
+    padding: 20px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.contacto_contacto-act>.contacto_contacto_titulo{
+    color: red;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5vw;
+}
+
+@media only screen and (min-width:600px){
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0.5vw;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .eventos {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0.5vw;
+    }
+}
+
+.croped{
+    height: 300px;
+    object-fit: none;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+footer{
+    background-color: aquamarine;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footerLinks a{
+    color: black;
+}
+
+.activeLink{
+    color: black;
+}
+
+.footerSection{
+    margin: 20px;
+    padding: 20px;
+}
+
+input[type=text],
+select,
+textarea{
+    width: 100%;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=sumbit]:hover{
+    background-color: black;
+}
+
+.container{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.w30{
+    width: 40%;
+}
+
+img.redimension{
+    width: 356px;
+    height: 500px;
+}
