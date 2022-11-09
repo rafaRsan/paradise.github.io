@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW WORLD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="activate">REGISTRO</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="#">REGISTRO</a>
+        <a class="nav-item nav-link" href="contacto.html">CONTACTO</a>
+        <a class="nav-item nav-link" href="index.html">HOME</a>
     </nav>
     <div class="principal">
         <div class="principal_registro">
-            <form action="">
-
-                <label for="FName">NOMBRE</label>
-                <input type="text" id="FName" name="firstName" placeholder="Tu nombre...">
-
-                <label for="LName">APELLIDO</label>
-                <input type="text" id="LName" name="lastName" placeholder="Tu apellido...">
-
-                <label for="country">PAIS</label>
-                <select name="country" id="country">
-                    <option value="argentina">ARGENTINA</option>
-                    <option value="chile">CHILE</option>
-                    <option value="brasil">BRASIL</option>
-                    <option value="uruguay">URUGUAY</option>
-                </select>
-
-                <label for="mail">CORREO ELECTRONICO</label>
-                <input type="text" id="mail" name="email" placeholder="Tu correo electronico">
-
-                <input type="submit" value="Enviar">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Pais</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Argentina</option>
+                      <option>Chile</option>
+                      <option>Brasil</option>
+                      <option>Uruguay</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
             </form>
         </div>
     </div>
